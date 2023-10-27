@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>El p&eacute;ndulo doble</title>
+
+
+
+
+	<script src='doble.js'></script>
+ 	<script src='pendulo_doble.js'></script>
+
+  <script> 
+function printValue(sliderID, textbox) {
+            var x = document.getElementById(textbox);
+            var y = document.getElementById(sliderID);
+            x.value = y.value;
+        }
+window.onload = function(){
+		app_1();
+		app_2();
+	}
+	</script>
+</head>
+
+<body>
+</p>
+
+	<canvas id='canvas_1' width='645' height='400'></canvas>
+	<div id='controls' style='align:left; width:625px; height:110px'>
+	<label for="angulo1">Angulo 1:</label> <input type='range' id='angulo1'  min='-30' max='30' step='5' value='60' onchange="printValue('angulo1','angulo1_1')"/>  
+		<input type='text' id='angulo1_1'  value='60' size='3'/>  
+		<label for="angulo2">Angulo 2:</label> <input type='range' id='angulo2'  min='-30' max='30' step='5' value='-30' onchange="printValue('angulo2','angulo2_1')"/>  
+		<input type='text' id='angulo2_1'  value='-30' size='3'/>  <br/>
+
+		<label for="masa2">Masa 2:</label> <input type='range' id='masa2'  min='0.5' max='5' step='0.5' value='1' onchange="printValue('masa2','masa2_1')"/>  
+		<input type='text' id='masa2_1'  value='1' size='3'/>  
+
+		<label for="longitud2">Longitud 2:</label> <input type='range' id='longitud2'  min='0.5' max='2' step='0.5' value='2' onchange="printValue('longitud2','longitud2_1')"/>  
+  		<input type='text' id='longitud2_1'  value='2' size='3'/>   
+      <hr class='barra' />
+	<label for="paso">Paso:</label>  <input type='text' id='paso_1'  value='0.01' size='5'/>  
+<label for="paso">Trayectoria: n. puntos:</label>  <input type='text' id='numero_1'  value='400' size='5'/>  
+
+		<div id='botones'>
+			<input id='nuevo' type='button' value='Nuevo'/>
+<input id='empieza' type='button' value='&#9658;'/>
+<input id='pausa' type='button' value='||'/>
+<input id='paso' type='button' value='&gt;|' style='display:none'/>
+		</div>
+    </div>
+  </mrow>
+ </mstyle>
+</math>
+
+
+
+</p>
+
+	<canvas id='canvas_2' width='645' height='400'></canvas>
+	<div id='controls' style='align:left; width:625px; height:100px'>
+
+		<label for="angulo21">Angulo 1:</label> <input type='range' id='angulo21'  min='-10' max='10' step='0.5' value='10' onchange="printValue('angulo21','angulo21_1')"/>  
+		<input type='text' id='angulo21_1'  value='10' size='3'/>  
+		<label for="angulo22">Angulo 2:</label> <input type='range' id='angulo22'  min='-10' max='10' step='0.5' value='0' onchange="printValue('angulo22','angulo22_1')"/>  
+		<input type='text' id='angulo22_1'  value='0' size='3'/>  <br/>
+
+		<label for="masa22">Masa 2:</label> <input type='range' id='masa22'  min='0.5' max='5' step='0.5' value='1' onchange="printValue('masa22','masa22_1')"/>  
+		<input type='text' id='masa22_1'  value='1' size='3'/>  
+
+		<label for="longitud22">Longitud 2:</label> <input type='range' id='longitud22'  min='0.5' max='2' step='0.5' value='1' onchange="printValue('longitud22','longitud22_1')"/>  
+		<input type='text' id='longitud22_1'  value='1' size='3'/>   <br/>
+
+		<div id='botones'>
+			<input id='nuevo_2' type='button' value='Nuevo'/>
+<input id='empieza_2' type='button' value='&#9658;'/>
+<input id='pausa_2' type='button' value='||'/>
+<input id='paso_2' type='button' value='&gt;|' style='display:none'/>
+		</div>
+    </div>
+	
+	  
+
+</article>
+
+
+
+
+  
+</body>
+</html>
